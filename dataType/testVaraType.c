@@ -109,6 +109,7 @@ int main()
     int notVal = !val;
     printf("notVal:%d\n",notVal);
 #endif
+#if 0
     /* 且或非，常用在条件判断中 不是单纯的进行数字的运算 && ||*/
 
     int condition1 = 1;
@@ -132,7 +133,18 @@ int main()
     {
         printf("not good!");
     }
+#endif
 
+    /* 运算符：双目运算符 & 三目运算符 */
+    /* 双目运算符 */
+    /* */
+    int num1 = 10;
+    int num2 = 30;
+
+    /* 三目运算符:如果条件成立就执行前面的，如果条件不成立就执行后面的 */
+    int num3 = (num1 > num2) ? 100 : 666;
+
+    printf("num3:%d\n", num3);
 
 
     return 0;
