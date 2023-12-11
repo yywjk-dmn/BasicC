@@ -6,16 +6,16 @@ int main()
 {
 
 
-#if 0
+#if 1
 
-    /* 如何获取数组哟有多少个元素:数组的总长度/每个元素的长度 */
+    /* 如何获取数组有多少个元素:数组的总长度/每个元素的长度 */
     long array[BUFFER_SIZE] = { 0 };
 
     int arrayLen = sizeof(array);
-    printf("len:%d\n", len);
+    printf("len:%d\n", arrayLen);
 
     int elementLen = sizeof(array[0]);
-    printf("len:%d\n", len);
+    printf("len:%d\n", elementLen);
 
     int lenght = arrayLen / elementLen;
     printf("length:%d\n", lenght);
