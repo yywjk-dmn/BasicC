@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "calculateFunc.h"
-
+#include "myString.h"
 
 /* 函数参数可以没有 */
 /* 函数返回值 没有就是void,如果有，就返回你想返回的数据类型（int char long short float double(内存大小占多少)） */
@@ -89,6 +89,7 @@ int main()
     printf("len: %d\n",len);
 #endif
 
+#if 0
     int num1 = 50;
     int num2 = 60;
     int sum = calculateAdd(num1, num2);
@@ -102,9 +103,12 @@ int main()
 
     int num4 = calculateDiv(num1, num2);
     printf("num4:%d\n",num4);
+#endif
 
 
-
+    char *ptr = "hello\0world";
+    int len = myStrlen(ptr);
+    printf("len:%d\n", len);
 
     return 0;
 }
